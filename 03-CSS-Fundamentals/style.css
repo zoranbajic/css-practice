@@ -11,6 +11,7 @@ body {
   font-family: sans-serif;
 
   border-top: 10px solid #1098ad;
+  position: relative;
 }
 
 /* Setting the left and right margins to auto means they will have the same values which means the content will be centered */
@@ -35,7 +36,7 @@ nav {
 
 .post-header {
   margin-bottom: 40px;
-  position: relative;
+  /* position: relative; */
 }
 
 aside {
@@ -183,6 +184,15 @@ button {
   position: absolute;
   bottom: 50px;
   right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h3 + p::first-line {
+  /* color: red; */
 }
 
 /* Resolving conflicts */
