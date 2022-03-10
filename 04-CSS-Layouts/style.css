@@ -230,3 +230,8 @@ h2::after {
 footer p {
   color: green !important;
 } */
+
+/* FLOATS */
+.author-img {
+  float: left;
+}
