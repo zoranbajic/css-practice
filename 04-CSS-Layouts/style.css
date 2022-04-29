@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Page sections */
@@ -16,13 +17,12 @@ body {
 
 /* Setting the left and right margins to auto means they will have the same values which means the content will be centered */
 .container {
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
 }
 
 .main-header {
   background-color: #f7f7f7;
-  background-color: red;
   /* padding: 20px;
   padding-left: 40px;
   padding-right: 40px; */
@@ -44,8 +44,7 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 /* Smaller elements */
@@ -77,6 +76,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -122,6 +122,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 li:last-child {
@@ -261,4 +262,19 @@ nav {
   clear: both;
   content: '';
   display: block;
+}
+
+/* The article and aside are box elements so they take up 100% of the width of the container (1200px). To make them side by side, we will float them and give them specific widths */
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
 }
